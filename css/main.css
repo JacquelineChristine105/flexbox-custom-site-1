@@ -115,11 +115,10 @@ body {
   height:100%;
 }
 
-.header {
-    margin: 0;
-    padding: 0;
-    height: 25%;
-    width: 100%;
+/* ----------- HEADER - LOGO DETAILS ----------- */
+
+header {
+    margin-bottom: 80%;
     display: flex;
     justify-content: center;
 }
@@ -129,31 +128,55 @@ body {
     font-family: 'BeautifulBloom-Regular', sans-serif;
     font-size: 5em;
     line-height: 0.0125em;
-    margin-left: -10%;
+    margin-left: -5%;
 }
 
 #middle-name {
     margin-top: -5%;
-    padding-left: 30%;
+    padding-left: 35%;
 }
 
 #year {
     font-family: 'Kinfolk', sans-serif;
     font-size: 1rem;
     white-space: nowrap;
-    padding-left: 80%;
-    align-items: flex-start;
+    padding-left: 87%;
     margin-top: -16%;
 }
 
+/* ----------- FLOATING "WHO AM I" DETAIL ----------- */
+
 .wrapper {
-    margin: 0;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content:left;
     align-items: center;
-    padding-left: 5%;
+    margin-top: -5%;
+    margin-bottom: 50%;;
+}
+
+#welcome, #overlap-about-image {
+    position: absolute;
+}
+
+#welcome {
+    color: #fff;   
+    font-family: 'BeautifulBloom-Regular', sans-serif;
+    font-size: 2.5em;
+    transform: translate(30%, -210%) rotate(-7deg);
+    z-index: 1;
+}
+
+#overlap-about-image {
+    width: 50%;
+    height: 50%;
+    transform: scale(1.17188, 1.17188) translate(10%, -80%) rotate(5deg);
+    background-image: url(../img/Jacqueline-Kevin-Engagement-46.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: 40% 60%;
+    border: 0.25rem solid #ffff;
 }
 
 #content {
@@ -166,8 +189,10 @@ body {
     line-height: 1.5em;
     border-radius: 20px;
     padding: 0px 30px;
-    width: 50%;
+    width: 48%;
     height: fit-content;
+    margin-left: 4%;
+    margin-top: 80%;
 }
 
 #content p span {
@@ -176,19 +201,19 @@ body {
     line-height: 1em;
 }
 
-#overlap-about-image {
-    float:right;
-    width: 50%;
+#overlap-about-image-2 {
+    float: right;
+    width: 60%;
     height: 50%;
     display: block;
     background-image: url(../img/me.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: cover;    
+    background-position: 40% 60%;
     transform: scale(1.17188, 1.17188) translate(11.5867px, 27.2067px) rotate(356deg);
     border: 0.25rem solid #ffff;
-    z-index: 9;
     margin-right: 10%;
+    z-index: 3;
     /*
     
     position: absolute;
@@ -196,6 +221,60 @@ body {
     left: 200px;
 
     */
+}
+
+.about-me-wrapper {
+    /*add display:flex and set justify-content to space-between*/
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .me-1, .me-2, .me-3 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1.6em;
+    background-color: #f16059;
+    height: 300px;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----------- For screens 768px and larger ----------- */
+@media (min-width: 768px) {
+}
+
+/* ----------- For screens 1200px wide and larger----------- */
+@media (min-width: 1200px) {
+
+    header {
+        margin-bottom: 5%;
+    }
+
+    #welcome {
+        color: #fff;   
+        font-family: 'BeautifulBloom-Regular', sans-serif;
+        font-size: 3em; 
+        position: absolute;
+        transform: translate(50%, -85%) rotate(0deg);
+    }
+
+    #overlap-about-image-2 {
+        float: right;
+        width: 50%;
+        height: 70%;
+        display: block;
+        background-image: url(../img/me.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+        background-position:70% 20%;
+        transform: scale(1.17188, 1.17188) translate(11.5867px, 27.2067px) rotate(356deg);
+        border: 0.25rem solid #ffff;
+        margin-right: 10%;
+    }
 }
 
 
