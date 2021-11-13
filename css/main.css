@@ -163,7 +163,7 @@ header {
 #welcome {
     color: #fff;   
     font-family: 'BeautifulBloom-Regular', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.25rem;
     transform: translate(30%, -210%) rotate(-7deg);
     z-index: 1;
 }
@@ -269,8 +269,9 @@ header {
         color: #fff;   
         font-family: 'BeautifulBloom-Regular', sans-serif;
         font-size: 3em; 
-        position: absolute;
-        transform: translate(180%, -85%) rotate(-10deg);
+        font-weight: 0;        
+        position: absolute;        
+        transform: translate(185%, -85%) rotate(-0deg);
     }
 
     #overlap-about-image {
